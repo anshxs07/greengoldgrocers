@@ -69,7 +69,7 @@ const Enquiry = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#E8DCC8]/30 to-[#FDFBF7] py-20 md:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#F5EFE6]/30 to-[#FDFBF7] py-20 md:py-32">
         <div className="container mx-auto px-4 md:px-8 max-w-7xl">
           <motion.div
             initial="hidden"
@@ -81,7 +81,7 @@ const Enquiry = () => {
             <h1 className="font-heading text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] text-[#052e16]" data-testid="enquiry-hero-heading">
               Get in Touch
             </h1>
-            <p className="text-lg md:text-xl leading-relaxed text-[#5C4A3A]">
+            <p className="text-lg md:text-xl leading-relaxed text-[#6B5D52]">
               Have questions about our products or want to place a bulk order? We'd love to hear from you!
             </p>
           </motion.div>
@@ -105,7 +105,7 @@ const Enquiry = () => {
                 <h2 className="font-heading text-4xl md:text-5xl font-semibold tracking-tight text-[#052e16] mb-6" data-testid="contact-info-heading">
                   Contact Information
                 </h2>
-                <p className="text-base leading-relaxed text-[#5C4A3A]">
+                <p className="text-base leading-relaxed text-[#6B5D52]">
                   Reach out to us through any of these channels. Our team is ready to assist you with your organic grocery needs.
                 </p>
               </div>
@@ -120,13 +120,13 @@ const Enquiry = () => {
                   <motion.div 
                     whileHover={{ rotate: [0, -10, 10, -10, 0] }}
                     transition={{ duration: 0.5 }}
-                    className="bg-[#E8DCC8] p-3 rounded-xl"
+                    className="bg-[#F5EFE6] p-3 rounded-xl"
                   >
                     <Phone className="w-6 h-6 text-[#14532D]" />
                   </motion.div>
                   <div>
                     <h3 className="font-heading text-xl font-medium text-[#052e16] mb-1">Phone</h3>
-                    <p className="text-base text-[#5C4A3A]">+91 98765 43210</p>
+                    <p className="text-base text-[#6B5D52]">+91 98765 43210</p>
                   </div>
                 </motion.div>
 
@@ -139,13 +139,13 @@ const Enquiry = () => {
                   <motion.div 
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.3 }}
-                    className="bg-[#E8DCC8] p-3 rounded-xl"
+                    className="bg-[#F5EFE6] p-3 rounded-xl"
                   >
                     <Mail className="w-6 h-6 text-[#14532D]" />
                   </motion.div>
                   <div>
                     <h3 className="font-heading text-xl font-medium text-[#052e16] mb-1">Email</h3>
-                    <p className="text-base text-[#5C4A3A]">hello@greengoldgrocers.com</p>
+                    <p className="text-base text-[#6B5D52]">hello@greengoldgrocers.com</p>
                   </div>
                 </motion.div>
 
@@ -158,13 +158,13 @@ const Enquiry = () => {
                   <motion.div 
                     whileHover={{ y: -3 }}
                     transition={{ duration: 0.3 }}
-                    className="bg-[#E8DCC8] p-3 rounded-xl"
+                    className="bg-[#F5EFE6] p-3 rounded-xl"
                   >
                     <MapPin className="w-6 h-6 text-[#14532D]" />
                   </motion.div>
                   <div>
                     <h3 className="font-heading text-xl font-medium text-[#052e16] mb-1">Location</h3>
-                    <p className="text-base text-[#5C4A3A]">Mumbai, Maharashtra, India</p>
+                    <p className="text-base text-[#6B5D52]">Mumbai, Maharashtra, India</p>
                   </div>
                 </motion.div>
               </div>
@@ -184,7 +184,7 @@ const Enquiry = () => {
                   initial={{ scale: 0.9, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ duration: 0.3 }}
-                  className="mb-6 p-4 bg-[#E8DCC8] rounded-xl flex items-center gap-3" 
+                  className="mb-6 p-4 bg-[#F5EFE6] rounded-xl flex items-center gap-3" 
                   data-testid="success-message"
                 >
                   <motion.div
@@ -210,7 +210,7 @@ const Enquiry = () => {
                     data-testid="input-name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-xl border-2 border-[#E8DCC8] bg-white/50 focus:bg-white focus:border-[#14532D] focus:shadow-lg focus:shadow-[#14532D]/10 outline-none transition-all duration-300"
+                    className="w-full px-4 py-3 rounded-xl border-2 border-[#F5EFE6] bg-white/50 focus:bg-white focus:border-[#14532D] focus:shadow-lg focus:shadow-[#14532D]/10 outline-none transition-all duration-300"
                     placeholder="Enter your full name"
                   />
                   {errors.name && <p className="text-red-600 text-sm mt-1">{errors.name}</p>}
@@ -227,7 +227,7 @@ const Enquiry = () => {
                     data-testid="input-email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-xl border-2 border-[#E8DCC8] bg-white/50 focus:bg-white focus:border-[#14532D] focus:shadow-lg focus:shadow-[#14532D]/10 outline-none transition-all duration-300"
+                    className="w-full px-4 py-3 rounded-xl border-2 border-[#F5EFE6] bg-white/50 focus:bg-white focus:border-[#14532D] focus:shadow-lg focus:shadow-[#14532D]/10 outline-none transition-all duration-300"
                     placeholder="your.email@example.com"
                   />
                   {errors.email && <p className="text-red-600 text-sm mt-1">{errors.email}</p>}
@@ -244,7 +244,7 @@ const Enquiry = () => {
                     data-testid="input-phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-xl border-2 border-[#E8DCC8] bg-white/50 focus:bg-white focus:border-[#14532D] focus:shadow-lg focus:shadow-[#14532D]/10 outline-none transition-all duration-300"
+                    className="w-full px-4 py-3 rounded-xl border-2 border-[#F5EFE6] bg-white/50 focus:bg-white focus:border-[#14532D] focus:shadow-lg focus:shadow-[#14532D]/10 outline-none transition-all duration-300"
                     placeholder="10-digit phone number"
                   />
                   {errors.phone && <p className="text-red-600 text-sm mt-1">{errors.phone}</p>}
@@ -261,7 +261,7 @@ const Enquiry = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows={5}
-                    className="w-full px-4 py-3 rounded-xl border-2 border-[#E8DCC8] bg-white/50 focus:bg-white focus:border-[#14532D] focus:shadow-lg focus:shadow-[#14532D]/10 outline-none transition-all duration-300 resize-none"
+                    className="w-full px-4 py-3 rounded-xl border-2 border-[#F5EFE6] bg-white/50 focus:bg-white focus:border-[#14532D] focus:shadow-lg focus:shadow-[#14532D]/10 outline-none transition-all duration-300 resize-none"
                     placeholder="Tell us about your requirements..."
                   />
                   {errors.message && <p className="text-red-600 text-sm mt-1">{errors.message}</p>}

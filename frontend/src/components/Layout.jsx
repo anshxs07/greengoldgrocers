@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-        className="sticky top-0 z-50 backdrop-blur-md bg-white/70 border-b border-[#E8DCC8] shadow-sm"
+        className="sticky top-0 z-50 backdrop-blur-md bg-white/70 border-b border-[#F5EFE6] shadow-sm"
       >
         <nav className="container mx-auto px-4 md:px-8 max-w-7xl">
           <div className="flex items-center justify-between h-20">
@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
                 to="/"
                 data-testid="nav-home"
                 className={`text-base font-medium tracking-wide transition-all hover:scale-105 ${
-                  isActive('/') ? 'text-[#14532D] font-semibold' : 'text-[#5C4A3A] hover:text-[#14532D]'
+                  isActive('/') ? 'text-[#14532D] font-semibold' : 'text-[#6B5D52] hover:text-[#14532D]'
                 }`}
               >
                 Home
@@ -48,7 +48,7 @@ const Layout = ({ children }) => {
                 to="/about"
                 data-testid="nav-about"
                 className={`text-base font-medium tracking-wide transition-all hover:scale-105 ${
-                  isActive('/about') ? 'text-[#14532D] font-semibold' : 'text-[#5C4A3A] hover:text-[#14532D]'
+                  isActive('/about') ? 'text-[#14532D] font-semibold' : 'text-[#6B5D52] hover:text-[#14532D]'
                 }`}
               >
                 About Us
@@ -57,7 +57,7 @@ const Layout = ({ children }) => {
                 to="/products"
                 data-testid="nav-products"
                 className={`text-base font-medium tracking-wide transition-all hover:scale-105 ${
-                  isActive('/products') ? 'text-[#14532D] font-semibold' : 'text-[#5C4A3A] hover:text-[#14532D]'
+                  isActive('/products') ? 'text-[#14532D] font-semibold' : 'text-[#6B5D52] hover:text-[#14532D]'
                 }`}
               >
                 Our Products

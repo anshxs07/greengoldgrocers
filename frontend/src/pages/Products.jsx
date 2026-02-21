@@ -85,7 +85,7 @@ const Products = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#E8DCC8]/30 to-[#FDFBF7] py-20 md:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#F5EFE6]/30 to-[#FDFBF7] py-20 md:py-32">
         <div className="container mx-auto px-4 md:px-8 max-w-7xl">
           <motion.div
             initial="hidden"
@@ -97,7 +97,7 @@ const Products = () => {
             <h1 className="font-heading text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] text-[#052e16]" data-testid="products-hero-heading">
               Our Products
             </h1>
-            <p className="text-lg md:text-xl leading-relaxed text-[#5C4A3A]">
+            <p className="text-lg md:text-xl leading-relaxed text-[#6B5D52]">
               Discover our curated selection of premium organic groceries, sourced from the finest farms across India.
             </p>
           </motion.div>
@@ -127,7 +127,7 @@ const Products = () => {
                   className={`px-6 py-3 rounded-full font-medium text-base transition-all ${
                     selectedCategory === category
                       ? 'bg-[#14532D] text-white shadow-lg shadow-[#14532D]/30'
-                      : 'bg-white text-[#14532D] hover:bg-[#E8DCC8] border border-[#E8DCC8] hover:shadow-md'
+                      : 'bg-white text-[#14532D] hover:bg-[#F5EFE6] border border-[#F5EFE6] hover:shadow-md'
                   }`}
                 >
                   {category}
@@ -164,14 +164,14 @@ const Products = () => {
                     initial={{ scale: 0.9, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 0.3, delay: index * 0.1 + 0.2 }}
-                    className="text-xs font-medium tracking-wider uppercase text-[#14532D]/80 bg-[#E8DCC8] px-3 py-1 rounded-full inline-block"
+                    className="text-xs font-medium tracking-wider uppercase text-[#14532D]/80 bg-[#F5EFE6] px-3 py-1 rounded-full inline-block"
                   >
                     {product.category}
                   </motion.div>
                   <h3 className="font-heading text-2xl font-medium text-[#052e16]">
                     {product.name}
                   </h3>
-                  <p className="text-base leading-relaxed text-[#5C4A3A]">
+                  <p className="text-base leading-relaxed text-[#6B5D52]">
                     {product.description}
                   </p>
                 </div>
@@ -182,7 +182,7 @@ const Products = () => {
           {/* No products message */}
           {filteredProducts.length === 0 && (
             <div className="text-center py-12">
-              <p className="text-lg text-[#5C4A3A]">No products found in this category.</p>
+              <p className="text-lg text-[#6B5D52]">No products found in this category.</p>
             </div>
           )}
         </div>

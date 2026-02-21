@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#FDFBF7] to-[#E8DCC8]/30">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#FDFBF7] to-[#F5EFE6]/30">
         <div className="container mx-auto px-4 md:px-8 max-w-7xl py-20 md:py-32">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Text Content */}
@@ -29,7 +29,7 @@ const Home = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="inline-block"
               >
-                <span className="text-sm font-medium tracking-wider uppercase text-[#14532D]/80 bg-[#E8DCC8] px-4 py-2 rounded-full" data-testid="hero-badge">
+                <span className="text-sm font-medium tracking-wider uppercase text-[#14532D]/80 bg-[#F5EFE6] px-4 py-2 rounded-full" data-testid="hero-badge">
                   100% Organic & Natural
                 </span>
               </motion.div>
@@ -37,7 +37,7 @@ const Home = () => {
                 Pure Nature,<br />
                 Delivered to Your Door
               </h1>
-              <p className="text-lg md:text-xl leading-relaxed text-[#5C4A3A] max-w-xl" data-testid="hero-subtext">
+              <p className="text-lg md:text-xl leading-relaxed text-[#6B5D52] max-w-xl" data-testid="hero-subtext">
                 Experience the authentic taste of premium Indian organic groceries. Sustainably sourced, ethically grown, and delivered fresh to your home.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -86,7 +86,7 @@ const Home = () => {
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 0.2, scale: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className="absolute -z-10 top-10 right-10 w-64 h-64 bg-[#8B6F47] rounded-full blur-3xl"
+                className="absolute -z-10 top-10 right-10 w-64 h-64 bg-[#7A5C47] rounded-full blur-3xl"
               ></motion.div>
             </motion.div>
           </div>
@@ -107,7 +107,7 @@ const Home = () => {
             <h2 className="font-heading text-4xl md:text-5xl font-semibold tracking-tight text-[#052e16] mb-4" data-testid="features-heading">
               Why Choose GreenGold?
             </h2>
-            <p className="text-lg md:text-xl leading-relaxed text-[#5C4A3A] max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl leading-relaxed text-[#6B5D52] max-w-2xl mx-auto">
               We're committed to bringing you the finest organic products with uncompromising quality.
             </p>
           </motion.div>
@@ -127,14 +127,14 @@ const Home = () => {
               <motion.div 
                 whileHover={{ rotate: [0, -10, 10, -10, 0], scale: 1.1 }}
                 transition={{ duration: 0.5 }}
-                className="bg-[#E8DCC8] w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+                className="bg-[#F5EFE6] w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
               >
                 <Leaf className="w-8 h-8 text-[#14532D]" />
               </motion.div>
               <h3 className="font-heading text-2xl md:text-3xl font-medium text-[#052e16] mb-4">
                 Organic Ingredients
               </h3>
-              <p className="text-base leading-relaxed text-[#5C4A3A]">
+              <p className="text-base leading-relaxed text-[#6B5D52]">
                 Certified 100% organic products sourced directly from sustainable farms across India.
               </p>
             </motion.div>
@@ -153,14 +153,14 @@ const Home = () => {
               <motion.div 
                 whileHover={{ rotate: [0, -10, 10, -10, 0], scale: 1.1 }}
                 transition={{ duration: 0.5 }}
-                className="bg-[#E8DCC8] w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+                className="bg-[#F5EFE6] w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
               >
                 <Award className="w-8 h-8 text-[#14532D]" />
               </motion.div>
               <h3 className="font-heading text-2xl md:text-3xl font-medium text-[#052e16] mb-4">
                 Premium Quality
               </h3>
-              <p className="text-base leading-relaxed text-[#5C4A3A]">
+              <p className="text-base leading-relaxed text-[#6B5D52]">
                 Rigorous quality checks ensure only the best products reach your kitchen.
               </p>
             </motion.div>
@@ -179,14 +179,14 @@ const Home = () => {
               <motion.div 
                 whileHover={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 0.5 }}
-                className="bg-[#E8DCC8] w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+                className="bg-[#F5EFE6] w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
               >
                 <Heart className="w-8 h-8 text-[#14532D]" />
               </motion.div>
               <h3 className="font-heading text-2xl md:text-3xl font-medium text-[#052e16] mb-4">
                 Healthy Lifestyle
               </h3>
-              <p className="text-base leading-relaxed text-[#5C4A3A]">
+              <p className="text-base leading-relaxed text-[#6B5D52]">
                 Nourish your body with wholesome, chemical-free groceries for a healthier life.
               </p>
             </motion.div>
