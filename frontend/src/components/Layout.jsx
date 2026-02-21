@@ -103,7 +103,13 @@ const Layout = ({ children }) => {
         <div className="container mx-auto px-4 md:px-8 max-w-7xl py-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {/* Brand Section */}
-            <div className="space-y-4">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="space-y-4"
+            >
               <div className="flex items-center gap-2">
                 <div className="bg-white p-2 rounded-full">
                   <Leaf className="w-5 h-5 text-[#14532D]" />
@@ -113,58 +119,74 @@ const Layout = ({ children }) => {
               <p className="text-white/80 leading-relaxed">
                 Your trusted source for premium organic groceries. Bringing nature's best to your doorstep.
               </p>
-            </div>
+            </motion.div>
 
             {/* Quick Links */}
-            <div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
               <h3 className="text-lg font-heading font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link to="/" className="text-white/80 hover:text-white transition-colors">
+                  <Link to="/" className="text-white/80 hover:text-white transition-all hover:translate-x-1 inline-block">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link to="/about" className="text-white/80 hover:text-white transition-colors">
+                  <Link to="/about" className="text-white/80 hover:text-white transition-all hover:translate-x-1 inline-block">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link to="/products" className="text-white/80 hover:text-white transition-colors">
+                  <Link to="/products" className="text-white/80 hover:text-white transition-all hover:translate-x-1 inline-block">
                     Our Products
                   </Link>
                 </li>
                 <li>
-                  <Link to="/enquiry" className="text-white/80 hover:text-white transition-colors">
+                  <Link to="/enquiry" className="text-white/80 hover:text-white transition-all hover:translate-x-1 inline-block">
                     Contact
                   </Link>
                 </li>
               </ul>
-            </div>
+            </motion.div>
 
             {/* Contact Info */}
-            <div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
               <h3 className="text-lg font-heading font-semibold mb-4">Contact Us</h3>
               <ul className="space-y-3">
-                <li className="flex items-start gap-2">
+                <li className="flex items-start gap-2 hover:translate-x-1 transition-transform">
                   <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" />
                   <span className="text-white/80">+91 98765 43210</span>
                 </li>
-                <li className="flex items-start gap-2">
+                <li className="flex items-start gap-2 hover:translate-x-1 transition-transform">
                   <Mail className="w-5 h-5 mt-0.5 flex-shrink-0" />
                   <span className="text-white/80">hello@greengoldgrocers.com</span>
                 </li>
-                <li className="flex items-start gap-2">
+                <li className="flex items-start gap-2 hover:translate-x-1 transition-transform">
                   <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
                   <span className="text-white/80">Mumbai, Maharashtra, India</span>
                 </li>
               </ul>
-            </div>
+            </motion.div>
           </div>
 
-          <div className="border-t border-white/10 mt-12 pt-8 text-center text-white/60 text-sm">
+          <motion.div 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="border-t border-white/10 mt-12 pt-8 text-center text-white/60 text-sm"
+          >
             <p>© 2025 GreenGold Grocers. All rights reserved. | Pure Nature, Delivered to Your Door.</p>
-          </div>
+          </motion.div>
         </div>
       </footer>
     </div>
