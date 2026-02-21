@@ -180,14 +180,26 @@ const Enquiry = () => {
               className="bg-white rounded-3xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)]"
             >
               {submitSuccess && (
-                <div className="mb-6 p-4 bg-[#D6EFD8] rounded-xl flex items-center gap-3" data-testid="success-message">
-                  <CheckCircle className="w-6 h-6 text-[#14532D]" />
+                <motion.div 
+                  initial={{ scale: 0.9, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 0.3 }}
+                  className="mb-6 p-4 bg-[#D6EFD8] rounded-xl flex items-center gap-3" 
+                  data-testid="success-message"
+                >
+                  <motion.div
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ duration: 0.5, type: "spring" }}
+                  >
+                    <CheckCircle className="w-6 h-6 text-[#14532D]" />
+                  </motion.div>
                   <p className="text-[#14532D] font-medium">Thank you! We'll get back to you soon.</p>
-                </div>
+                </motion.div>
               )}
 
               <form onSubmit={handleSubmit} className="space-y-6" data-testid="enquiry-form">
-                <div>
+                <motion.div whileFocus={{ scale: 1.01 }} transition={{ duration: 0.2 }}>
                   <label htmlFor="name" className="block text-base font-medium text-[#052e16] mb-2">
                     Full Name *
                   </label>
@@ -198,13 +210,13 @@ const Enquiry = () => {
                     data-testid="input-name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-xl border-2 border-[#D6EFD8] bg-white/50 focus:bg-white focus:border-[#14532D] outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-xl border-2 border-[#D6EFD8] bg-white/50 focus:bg-white focus:border-[#14532D] focus:shadow-lg focus:shadow-[#14532D]/10 outline-none transition-all duration-300"
                     placeholder="Enter your full name"
                   />
                   {errors.name && <p className="text-red-600 text-sm mt-1">{errors.name}</p>}
-                </div>
+                </motion.div>
 
-                <div>
+                <motion.div whileFocus={{ scale: 1.01 }} transition={{ duration: 0.2 }}>
                   <label htmlFor="email" className="block text-base font-medium text-[#052e16] mb-2">
                     Email Address *
                   </label>
@@ -215,13 +227,13 @@ const Enquiry = () => {
                     data-testid="input-email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-xl border-2 border-[#D6EFD8] bg-white/50 focus:bg-white focus:border-[#14532D] outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-xl border-2 border-[#D6EFD8] bg-white/50 focus:bg-white focus:border-[#14532D] focus:shadow-lg focus:shadow-[#14532D]/10 outline-none transition-all duration-300"
                     placeholder="your.email@example.com"
                   />
                   {errors.email && <p className="text-red-600 text-sm mt-1">{errors.email}</p>}
-                </div>
+                </motion.div>
 
-                <div>
+                <motion.div whileFocus={{ scale: 1.01 }} transition={{ duration: 0.2 }}>
                   <label htmlFor="phone" className="block text-base font-medium text-[#052e16] mb-2">
                     Phone Number *
                   </label>
@@ -232,13 +244,13 @@ const Enquiry = () => {
                     data-testid="input-phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-xl border-2 border-[#D6EFD8] bg-white/50 focus:bg-white focus:border-[#14532D] outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-xl border-2 border-[#D6EFD8] bg-white/50 focus:bg-white focus:border-[#14532D] focus:shadow-lg focus:shadow-[#14532D]/10 outline-none transition-all duration-300"
                     placeholder="10-digit phone number"
                   />
                   {errors.phone && <p className="text-red-600 text-sm mt-1">{errors.phone}</p>}
-                </div>
+                </motion.div>
 
-                <div>
+                <motion.div whileFocus={{ scale: 1.01 }} transition={{ duration: 0.2 }}>
                   <label htmlFor="message" className="block text-base font-medium text-[#052e16] mb-2">
                     Message *
                   </label>
@@ -249,17 +261,19 @@ const Enquiry = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows={5}
-                    className="w-full px-4 py-3 rounded-xl border-2 border-[#D6EFD8] bg-white/50 focus:bg-white focus:border-[#14532D] outline-none transition-all resize-none"
+                    className="w-full px-4 py-3 rounded-xl border-2 border-[#D6EFD8] bg-white/50 focus:bg-white focus:border-[#14532D] focus:shadow-lg focus:shadow-[#14532D]/10 outline-none transition-all duration-300 resize-none"
                     placeholder="Tell us about your requirements..."
                   />
                   {errors.message && <p className="text-red-600 text-sm mt-1">{errors.message}</p>}
-                </div>
+                </motion.div>
 
-                <button
+                <motion.button
                   type="submit"
                   data-testid="submit-button"
                   disabled={isSubmitting}
-                  className="w-full bg-[#14532D] text-white px-8 py-4 rounded-full text-lg font-medium tracking-wide transition-all shadow-lg shadow-[#14532D]/20 hover:shadow-xl hover:shadow-[#14532D]/30 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                  className="w-full bg-[#14532D] text-white px-8 py-4 rounded-full text-lg font-medium tracking-wide transition-all shadow-lg shadow-[#14532D]/20 hover:shadow-xl hover:shadow-[#14532D]/40 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                 >
                   {isSubmitting ? (
                     'Sending...'
@@ -269,7 +283,7 @@ const Enquiry = () => {
                       Send Message
                     </>
                   )}
-                </button>
+                </motion.button>
               </form>
             </motion.div>
           </div>
