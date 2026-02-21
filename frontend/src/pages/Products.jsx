@@ -144,20 +144,28 @@ const Products = () => {
                 viewport={{ once: true, margin: '-100px' }}
                 variants={fadeInUp}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white rounded-3xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-shadow duration-500 group"
+                whileHover={{ y: -8, transition: { duration: 0.3 } }}
+                className="bg-white rounded-3xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_12px_40px_rgb(20,83,45,0.15)] transition-all duration-500 group"
                 data-testid={`product-card-${product.id}`}
               >
                 <div className="relative overflow-hidden">
-                  <img
+                  <motion.img
+                    whileHover={{ scale: 1.08 }}
+                    transition={{ duration: 0.5 }}
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-64 object-cover"
                   />
                 </div>
                 <div className="p-6 space-y-3">
-                  <div className="text-xs font-medium tracking-wider uppercase text-[#14532D]/80 bg-[#D6EFD8] px-3 py-1 rounded-full inline-block">
+                  <motion.div 
+                    initial={{ scale: 0.9, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.3, delay: index * 0.1 + 0.2 }}
+                    className="text-xs font-medium tracking-wider uppercase text-[#14532D]/80 bg-[#D6EFD8] px-3 py-1 rounded-full inline-block"
+                  >
                     {product.category}
-                  </div>
+                  </motion.div>
                   <h3 className="font-heading text-2xl font-medium text-[#052e16]">
                     {product.name}
                   </h3>
