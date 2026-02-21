@@ -34,3 +34,68 @@ img {
   height: auto;
   display: block;
 }
+
+/* Page transition wrapper */
+.page-transition {
+  animation: pageEnter 0.4s ease-out;
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button hover effects - using existing brand green */
+button, a[class*="bg-[#14532D]"], .cta-button {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:hover:not(:disabled), 
+a[class*="bg-[#14532D]"]:hover,
+.cta-button:hover {
+  transform: scale(1.03);
+}
+
+button:active:not(:disabled),
+a[class*="bg-[#14532D]"]:active,
+.cta-button:active {
+  transform: scale(0.98);
+}
+
+/* Image hover effects */
+.image-hover {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.image-hover:hover img {
+  transform: scale(1.05);
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+}
+
+/* Input focus animation - using existing brand green */
+input:focus,
+textarea:focus {
+  transition: all 0.3s ease;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition-property: transform, box-shadow, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
