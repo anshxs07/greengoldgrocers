@@ -39,16 +39,16 @@ h1, h2, h3, h4, h5, h6 {
     --popover-foreground: 0 0% 3.9%;
     --primary: 142 72% 20%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 30 35% 85%;
+    --secondary: 30 45% 92%;
     --secondary-foreground: 142 72% 20%;
-    --muted: 30 35% 85%;
-    --muted-foreground: 30 20% 35%;
-    --accent: 30 30% 45%;
+    --muted: 30 45% 92%;
+    --muted-foreground: 25 15% 40%;
+    --accent: 25 25% 40%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 30 35% 85%;
-    --input: 30 35% 85%;
+    --border: 30 30% 88%;
+    --input: 30 30% 88%;
     --ring: 142 72% 20%;
     --radius: 1rem;
   }
