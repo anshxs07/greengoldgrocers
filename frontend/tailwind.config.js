@@ -12,23 +12,23 @@ module.exports = {
           foreground: '#FFFFFF',
         },
         secondary: {
-          DEFAULT: '#E8DCC8',
+          DEFAULT: '#F5EFE6',
           foreground: '#14532D',
         },
         accent: {
-          DEFAULT: '#8B6F47',
+          DEFAULT: '#7A5C47',
           foreground: '#FFFFFF',
         },
         background: {
           DEFAULT: '#FDFBF7',
-          paper: '#F5F5F0',
+          paper: '#F9F6F1',
         },
         muted: {
-          DEFAULT: '#E8DCC8',
-          foreground: '#5C4A3A',
+          DEFAULT: '#F5EFE6',
+          foreground: '#6B5D52',
         },
-        border: '#E8DCC8',
-        input: '#E8DCC8',
+        border: '#E8DED1',
+        input: '#E8DED1',
         ring: '#14532D',
       },
       fontFamily: {
