@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#FDFBF7] to-[#D6EFD8]/30">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#FDFBF7] to-[#E8DCC8]/30">
         <div className="container mx-auto px-4 md:px-8 max-w-7xl py-20 md:py-32">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Text Content */}
@@ -29,7 +29,7 @@ const Home = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="inline-block"
               >
-                <span className="text-sm font-medium tracking-wider uppercase text-[#14532D]/80 bg-[#D6EFD8] px-4 py-2 rounded-full" data-testid="hero-badge">
+                <span className="text-sm font-medium tracking-wider uppercase text-[#14532D]/80 bg-[#E8DCC8] px-4 py-2 rounded-full" data-testid="hero-badge">
                   100% Organic & Natural
                 </span>
               </motion.div>
@@ -86,7 +86,7 @@ const Home = () => {
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 0.2, scale: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className="absolute -z-10 top-10 right-10 w-64 h-64 bg-[#D97706] rounded-full blur-3xl"
+                className="absolute -z-10 top-10 right-10 w-64 h-64 bg-[#8B6F47] rounded-full blur-3xl"
               ></motion.div>
             </motion.div>
           </div>
@@ -127,7 +127,7 @@ const Home = () => {
               <motion.div 
                 whileHover={{ rotate: [0, -10, 10, -10, 0], scale: 1.1 }}
                 transition={{ duration: 0.5 }}
-                className="bg-[#D6EFD8] w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+                className="bg-[#E8DCC8] w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
               >
                 <Leaf className="w-8 h-8 text-[#14532D]" />
               </motion.div>
@@ -153,7 +153,7 @@ const Home = () => {
               <motion.div 
                 whileHover={{ rotate: [0, -10, 10, -10, 0], scale: 1.1 }}
                 transition={{ duration: 0.5 }}
-                className="bg-[#D6EFD8] w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+                className="bg-[#E8DCC8] w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
               >
                 <Award className="w-8 h-8 text-[#14532D]" />
               </motion.div>
@@ -179,7 +179,7 @@ const Home = () => {
               <motion.div 
                 whileHover={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 0.5 }}
-                className="bg-[#D6EFD8] w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+                className="bg-[#E8DCC8] w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
               >
                 <Heart className="w-8 h-8 text-[#14532D]" />
               </motion.div>

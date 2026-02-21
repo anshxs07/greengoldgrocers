@@ -85,7 +85,7 @@ const Products = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#D6EFD8]/30 to-[#FDFBF7] py-20 md:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#E8DCC8]/30 to-[#FDFBF7] py-20 md:py-32">
         <div className="container mx-auto px-4 md:px-8 max-w-7xl">
           <motion.div
             initial="hidden"
@@ -127,7 +127,7 @@ const Products = () => {
                   className={`px-6 py-3 rounded-full font-medium text-base transition-all ${
                     selectedCategory === category
                       ? 'bg-[#14532D] text-white shadow-lg shadow-[#14532D]/30'
-                      : 'bg-white text-[#14532D] hover:bg-[#D6EFD8] border border-[#D6EFD8] hover:shadow-md'
+                      : 'bg-white text-[#14532D] hover:bg-[#E8DCC8] border border-[#E8DCC8] hover:shadow-md'
                   }`}
                 >
                   {category}
@@ -164,7 +164,7 @@ const Products = () => {
                     initial={{ scale: 0.9, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 0.3, delay: index * 0.1 + 0.2 }}
-                    className="text-xs font-medium tracking-wider uppercase text-[#14532D]/80 bg-[#D6EFD8] px-3 py-1 rounded-full inline-block"
+                    className="text-xs font-medium tracking-wider uppercase text-[#14532D]/80 bg-[#E8DCC8] px-3 py-1 rounded-full inline-block"
                   >
                     {product.category}
                   </motion.div>

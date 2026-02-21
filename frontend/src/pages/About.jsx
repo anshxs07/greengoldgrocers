@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#D6EFD8]/30 to-[#FDFBF7] py-20 md:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#E8DCC8]/30 to-[#FDFBF7] py-20 md:py-32">
         <div className="container mx-auto px-4 md:px-8 max-w-7xl">
           <motion.div
             initial="hidden"
@@ -59,7 +59,7 @@ const About = () => {
               className="space-y-6"
             >
               <div className="inline-block">
-                <span className="text-sm font-medium tracking-wider uppercase text-[#14532D]/80 bg-[#D6EFD8] px-4 py-2 rounded-full">
+                <span className="text-sm font-medium tracking-wider uppercase text-[#14532D]/80 bg-[#E8DCC8] px-4 py-2 rounded-full">
                   Our Journey
                 </span>
               </div>
@@ -81,7 +81,7 @@ const About = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 md:py-32 bg-gradient-to-b from-[#FDFBF7] to-[#D6EFD8]/20">
+      <section className="py-20 md:py-32 bg-gradient-to-b from-[#FDFBF7] to-[#E8DCC8]/20">
         <div className="container mx-auto px-4 md:px-8 max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Mission */}
@@ -124,7 +124,7 @@ const About = () => {
               <motion.div 
                 whileHover={{ scale: [1, 1.2, 1], rotate: [0, 180, 360] }}
                 transition={{ duration: 0.6 }}
-                className="bg-[#D97706] w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+                className="bg-[#8B6F47] w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
               >
                 <Sparkles className="w-8 h-8 text-white" />
               </motion.div>
@@ -169,7 +169,7 @@ const About = () => {
               className="text-center space-y-4"
               data-testid="value-purity"
             >
-              <div className="bg-[#D6EFD8] w-20 h-20 rounded-2xl flex items-center justify-center mx-auto">
+              <div className="bg-[#E8DCC8] w-20 h-20 rounded-2xl flex items-center justify-center mx-auto">
                 <Sprout className="w-10 h-10 text-[#14532D]" />
               </div>
               <h3 className="font-heading text-2xl font-medium text-[#052e16]">
@@ -190,7 +190,7 @@ const About = () => {
               className="text-center space-y-4"
               data-testid="value-farmers"
             >
-              <div className="bg-[#D6EFD8] w-20 h-20 rounded-2xl flex items-center justify-center mx-auto">
+              <div className="bg-[#E8DCC8] w-20 h-20 rounded-2xl flex items-center justify-center mx-auto">
                 <Users className="w-10 h-10 text-[#14532D]" />
               </div>
               <h3 className="font-heading text-2xl font-medium text-[#052e16]">
@@ -211,7 +211,7 @@ const About = () => {
               className="text-center space-y-4"
               data-testid="value-sustainability"
             >
-              <div className="bg-[#D6EFD8] w-20 h-20 rounded-2xl flex items-center justify-center mx-auto">
+              <div className="bg-[#E8DCC8] w-20 h-20 rounded-2xl flex items-center justify-center mx-auto">
                 <Sprout className="w-10 h-10 text-[#14532D]" />
               </div>
               <h3 className="font-heading text-2xl font-medium text-[#052e16]">
