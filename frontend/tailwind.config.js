@@ -12,11 +12,11 @@ module.exports = {
           foreground: '#FFFFFF',
         },
         secondary: {
-          DEFAULT: '#D6EFD8',
+          DEFAULT: '#E8DCC8',
           foreground: '#14532D',
         },
         accent: {
-          DEFAULT: '#D97706',
+          DEFAULT: '#8B6F47',
           foreground: '#FFFFFF',
         },
         background: {
@@ -24,11 +24,11 @@ module.exports = {
           paper: '#F5F5F0',
         },
         muted: {
-          DEFAULT: '#D6EFD8',
-          foreground: '#3f6212',
+          DEFAULT: '#E8DCC8',
+          foreground: '#5C4A3A',
         },
-        border: '#D6EFD8',
-        input: '#D6EFD8',
+        border: '#E8DCC8',
+        input: '#E8DCC8',
         ring: '#14532D',
       },
       fontFamily: {
