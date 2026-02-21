@@ -120,12 +120,17 @@ const Home = () => {
               viewport={{ once: true, margin: '-100px' }}
               variants={fadeInUp}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="bg-white rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-shadow duration-500"
+              whileHover={{ y: -8, transition: { duration: 0.3 } }}
+              className="bg-white rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_12px_40px_rgb(20,83,45,0.12)] transition-all duration-500"
               data-testid="feature-organic"
             >
-              <div className="bg-[#D6EFD8] w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+              <motion.div 
+                whileHover={{ rotate: [0, -10, 10, -10, 0], scale: 1.1 }}
+                transition={{ duration: 0.5 }}
+                className="bg-[#D6EFD8] w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+              >
                 <Leaf className="w-8 h-8 text-[#14532D]" />
-              </div>
+              </motion.div>
               <h3 className="font-heading text-2xl md:text-3xl font-medium text-[#052e16] mb-4">
                 Organic Ingredients
               </h3>
@@ -141,12 +146,17 @@ const Home = () => {
               viewport={{ once: true, margin: '-100px' }}
               variants={fadeInUp}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-white rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-shadow duration-500"
+              whileHover={{ y: -8, transition: { duration: 0.3 } }}
+              className="bg-white rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_12px_40px_rgb(20,83,45,0.12)] transition-all duration-500"
               data-testid="feature-quality"
             >
-              <div className="bg-[#D6EFD8] w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+              <motion.div 
+                whileHover={{ rotate: [0, -10, 10, -10, 0], scale: 1.1 }}
+                transition={{ duration: 0.5 }}
+                className="bg-[#D6EFD8] w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+              >
                 <Award className="w-8 h-8 text-[#14532D]" />
-              </div>
+              </motion.div>
               <h3 className="font-heading text-2xl md:text-3xl font-medium text-[#052e16] mb-4">
                 Premium Quality
               </h3>
@@ -162,12 +172,17 @@ const Home = () => {
               viewport={{ once: true, margin: '-100px' }}
               variants={fadeInUp}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="bg-white rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-shadow duration-500"
+              whileHover={{ y: -8, transition: { duration: 0.3 } }}
+              className="bg-white rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_12px_40px_rgb(20,83,45,0.12)] transition-all duration-500"
               data-testid="feature-lifestyle"
             >
-              <div className="bg-[#D6EFD8] w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+              <motion.div 
+                whileHover={{ scale: [1, 1.2, 1] }}
+                transition={{ duration: 0.5 }}
+                className="bg-[#D6EFD8] w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+              >
                 <Heart className="w-8 h-8 text-[#14532D]" />
-              </div>
+              </motion.div>
               <h3 className="font-heading text-2xl md:text-3xl font-medium text-[#052e16] mb-4">
                 Healthy Lifestyle
               </h3>
