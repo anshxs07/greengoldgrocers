@@ -20,7 +20,7 @@ const Products = () => {
       name: 'Multigrain Atta',
       category: 'Atta & Whole Grains',
       description: 'Nutritious blend of wheat, oats, and millet',
-      image: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&q=80&w=400',
+      image: 'https://images.unsplash.com/photo-1608797178974-15b35a64ede9?auto=format&fit=crop&q=80&w=400',
     },
     {
       id: 3,
@@ -34,7 +34,7 @@ const Products = () => {
       name: 'Steel Cut Oats',
       category: 'Healthy Cereals',
       description: 'Premium quality oats for a healthy breakfast',
-      image: 'https://images.unsplash.com/photo-1574643156929-51fa098b0394?auto=format&fit=crop&q=80&w=400',
+      image: 'https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&q=80&w=400',
     },
     {
       id: 5,
@@ -48,28 +48,28 @@ const Products = () => {
       name: 'Quinoa',
       category: 'Superfoods',
       description: 'Protein-rich superfood for modern diets',
-      image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&q=80&w=400',
+      image: 'https://images.unsplash.com/photo-1515543904379-3d6e8b2e3af2?auto=format&fit=crop&q=80&w=400',
     },
     {
       id: 7,
       name: 'Chia Seeds',
       category: 'Superfoods',
       description: 'Omega-3 rich seeds for daily wellness',
-      image: 'https://images.unsplash.com/photo-1626354099838-6747654d5320?auto=format&fit=crop&q=80&w=400',
+      image: 'https://images.unsplash.com/photo-1587816655854-2b8d85c597c3?auto=format&fit=crop&q=80&w=400',
     },
     {
       id: 8,
       name: 'Organic Turmeric Powder',
       category: 'Natural Grocery',
       description: 'Pure turmeric with natural curcumin',
-      image: 'https://images.unsplash.com/photo-1771541897176-44a3e01dc484?auto=format&fit=crop&q=80&w=400',
+      image: 'https://images.unsplash.com/photo-1615485500704-8e990f9900f7?auto=format&fit=crop&q=80&w=400',
     },
     {
       id: 9,
       name: 'Cold Pressed Coconut Oil',
       category: 'Natural Grocery',
       description: 'Virgin coconut oil for cooking and wellness',
-      image: 'https://images.unsplash.com/photo-1615485500704-8e990f9900f7?auto=format&fit=crop&q=80&w=400',
+      image: 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&q=80&w=400',
     },
   ];
 
