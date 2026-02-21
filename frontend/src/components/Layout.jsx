@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-        className="sticky top-0 z-50 backdrop-blur-md bg-white/70 border-b border-[#F5EFE6] shadow-sm"
+        className="sticky top-0 z-50 backdrop-blur-md bg-white/70 border-b border-[#E8DED1] shadow-sm"
       >
         <nav className="container mx-auto px-4 md:px-8 max-w-7xl">
           <div className="flex items-center justify-between h-20">
