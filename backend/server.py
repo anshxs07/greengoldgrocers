@@ -82,6 +82,18 @@ async def get_status_checks():
     
     return status_checks
 
+@api_router.post("/enquiry", response_model=Enquiry)
+async def create_enquiry(input: EnquiryCreate):
+    enquiry_dict = input.model_dump()
+    enquiry_obj = Enquiry(**enquiry_dict)
+    
+    # Convert to dict and serialize datetime to ISO string for MongoDB
+    doc = enquiry_obj.model_dump()
+    doc['created_at'] = doc['created_at'].isoformat()
+    
+    _ = await db.enquiries.insert_one(doc)
+    return enquiry_obj
+
 # Include the router in the main app
 app.include_router(api_router)
 
