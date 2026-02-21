@@ -91,12 +91,17 @@ const About = () => {
               viewport={{ once: true, margin: '-100px' }}
               variants={fadeInUp}
               transition={{ duration: 0.6 }}
-              className="bg-white rounded-3xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)]"
+              whileHover={{ y: -8, transition: { duration: 0.3 } }}
+              className="bg-white rounded-3xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_12px_40px_rgb(20,83,45,0.15)] transition-all duration-500"
               data-testid="mission-card"
             >
-              <div className="bg-[#14532D] w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+              <motion.div 
+                whileHover={{ rotate: [0, -10, 10, -10, 0], scale: 1.1 }}
+                transition={{ duration: 0.5 }}
+                className="bg-[#14532D] w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+              >
                 <Target className="w-8 h-8 text-white" />
-              </div>
+              </motion.div>
               <h3 className="font-heading text-3xl md:text-4xl font-semibold text-[#052e16] mb-4">
                 Our Mission
               </h3>
@@ -112,12 +117,17 @@ const About = () => {
               viewport={{ once: true, margin: '-100px' }}
               variants={fadeInUp}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-white rounded-3xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)]"
+              whileHover={{ y: -8, transition: { duration: 0.3 } }}
+              className="bg-white rounded-3xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_12px_40px_rgb(20,83,45,0.15)] transition-all duration-500"
               data-testid="vision-card"
             >
-              <div className="bg-[#D97706] w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+              <motion.div 
+                whileHover={{ scale: [1, 1.2, 1], rotate: [0, 180, 360] }}
+                transition={{ duration: 0.6 }}
+                className="bg-[#D97706] w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+              >
                 <Sparkles className="w-8 h-8 text-white" />
-              </div>
+              </motion.div>
               <h3 className="font-heading text-3xl md:text-4xl font-semibold text-[#052e16] mb-4">
                 Our Vision
               </h3>
