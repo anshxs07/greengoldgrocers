@@ -111,35 +111,62 @@ const Enquiry = () => {
               </div>
 
               <div className="space-y-6">
-                <div className="flex items-start gap-4 p-6 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)]" data-testid="contact-phone">
-                  <div className="bg-[#D6EFD8] p-3 rounded-xl">
+                <motion.div 
+                  whileHover={{ x: 4 }}
+                  transition={{ duration: 0.3 }}
+                  className="flex items-start gap-4 p-6 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(20,83,45,0.12)] transition-all duration-300" 
+                  data-testid="contact-phone"
+                >
+                  <motion.div 
+                    whileHover={{ rotate: [0, -10, 10, -10, 0] }}
+                    transition={{ duration: 0.5 }}
+                    className="bg-[#D6EFD8] p-3 rounded-xl"
+                  >
                     <Phone className="w-6 h-6 text-[#14532D]" />
-                  </div>
+                  </motion.div>
                   <div>
                     <h3 className="font-heading text-xl font-medium text-[#052e16] mb-1">Phone</h3>
                     <p className="text-base text-[#3f6212]">+91 98765 43210</p>
                   </div>
-                </div>
+                </motion.div>
 
-                <div className="flex items-start gap-4 p-6 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)]" data-testid="contact-email">
-                  <div className="bg-[#D6EFD8] p-3 rounded-xl">
+                <motion.div 
+                  whileHover={{ x: 4 }}
+                  transition={{ duration: 0.3 }}
+                  className="flex items-start gap-4 p-6 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(20,83,45,0.12)] transition-all duration-300" 
+                  data-testid="contact-email"
+                >
+                  <motion.div 
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.3 }}
+                    className="bg-[#D6EFD8] p-3 rounded-xl"
+                  >
                     <Mail className="w-6 h-6 text-[#14532D]" />
-                  </div>
+                  </motion.div>
                   <div>
                     <h3 className="font-heading text-xl font-medium text-[#052e16] mb-1">Email</h3>
                     <p className="text-base text-[#3f6212]">hello@greengoldgrocers.com</p>
                   </div>
-                </div>
+                </motion.div>
 
-                <div className="flex items-start gap-4 p-6 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)]" data-testid="contact-location">
-                  <div className="bg-[#D6EFD8] p-3 rounded-xl">
+                <motion.div 
+                  whileHover={{ x: 4 }}
+                  transition={{ duration: 0.3 }}
+                  className="flex items-start gap-4 p-6 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(20,83,45,0.12)] transition-all duration-300" 
+                  data-testid="contact-location"
+                >
+                  <motion.div 
+                    whileHover={{ y: -3 }}
+                    transition={{ duration: 0.3 }}
+                    className="bg-[#D6EFD8] p-3 rounded-xl"
+                  >
                     <MapPin className="w-6 h-6 text-[#14532D]" />
-                  </div>
+                  </motion.div>
                   <div>
                     <h3 className="font-heading text-xl font-medium text-[#052e16] mb-1">Location</h3>
                     <p className="text-base text-[#3f6212]">Mumbai, Maharashtra, India</p>
                   </div>
-                </div>
+                </motion.div>
               </div>
             </motion.div>
 
