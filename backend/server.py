@@ -40,9 +40,31 @@ class StatusCheckCreate(BaseModel):
 
 class EnquiryCreate(BaseModel):
     name: str
-    email: str
+    email: EmailStr
     phone: str
     message: str
+    
+    @field_validator('name')
+    @classmethod
+    def validate_name(cls, v):
+        if not v or not v.strip():
+            raise ValueError('Name cannot be empty')
+        return v.strip()
+    
+    @field_validator('phone')
+    @classmethod
+    def validate_phone(cls, v):
+        phone_clean = re.sub(r'\s+', '', v)
+        if not re.match(r'^[0-9]{10}$', phone_clean):
+            raise ValueError('Phone must be 10 digits')
+        return phone_clean
+    
+    @field_validator('message')
+    @classmethod
+    def validate_message(cls, v):
+        if not v or not v.strip():
+            raise ValueError('Message cannot be empty')
+        return v.strip()
 
 class Enquiry(BaseModel):
     model_config = ConfigDict(extra="ignore")
