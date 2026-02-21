@@ -213,20 +213,24 @@ const Home = () => {
               Join thousands of families who trust GreenGold Grocers for their daily nutrition needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/products"
-                data-testid="cta-shop-now"
-                className="bg-white text-[#14532D] px-8 py-6 rounded-full text-lg font-medium tracking-wide transition-all shadow-lg hover:shadow-xl active:scale-95 inline-block"
-              >
-                Shop Now
-              </Link>
-              <Link
-                to="/enquiry"
-                data-testid="cta-contact"
-                className="border-2 border-white text-white px-8 py-6 rounded-full text-lg font-medium tracking-wide transition-all hover:bg-white/10 bg-transparent active:scale-95 inline-block"
-              >
-                Contact Us
-              </Link>
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Link
+                  to="/products"
+                  data-testid="cta-shop-now"
+                  className="bg-white text-[#14532D] px-8 py-6 rounded-full text-lg font-medium tracking-wide transition-all shadow-lg hover:shadow-xl inline-block"
+                >
+                  Shop Now
+                </Link>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Link
+                  to="/enquiry"
+                  data-testid="cta-contact"
+                  className="border-2 border-white text-white px-8 py-6 rounded-full text-lg font-medium tracking-wide transition-all hover:bg-white/10 hover:shadow-lg bg-transparent inline-block"
+                >
+                  Contact Us
+                </Link>
+              </motion.div>
             </div>
           </motion.div>
         </div>
