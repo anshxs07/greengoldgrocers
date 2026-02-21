@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
                 to="/"
                 data-testid="nav-home"
                 className={`text-base font-medium tracking-wide transition-all hover:scale-105 ${
-                  isActive('/') ? 'text-[#14532D] font-semibold' : 'text-[#3f6212] hover:text-[#14532D]'
+                  isActive('/') ? 'text-[#14532D] font-semibold' : 'text-[#5C4A3A] hover:text-[#14532D]'
                 }`}
               >
                 Home
@@ -48,7 +48,7 @@ const Layout = ({ children }) => {
                 to="/about"
                 data-testid="nav-about"
                 className={`text-base font-medium tracking-wide transition-all hover:scale-105 ${
-                  isActive('/about') ? 'text-[#14532D] font-semibold' : 'text-[#3f6212] hover:text-[#14532D]'
+                  isActive('/about') ? 'text-[#14532D] font-semibold' : 'text-[#5C4A3A] hover:text-[#14532D]'
                 }`}
               >
                 About Us
@@ -57,7 +57,7 @@ const Layout = ({ children }) => {
                 to="/products"
                 data-testid="nav-products"
                 className={`text-base font-medium tracking-wide transition-all hover:scale-105 ${
-                  isActive('/products') ? 'text-[#14532D] font-semibold' : 'text-[#3f6212] hover:text-[#14532D]'
+                  isActive('/products') ? 'text-[#14532D] font-semibold' : 'text-[#5C4A3A] hover:text-[#14532D]'
                 }`}
               >
                 Our Products

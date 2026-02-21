@@ -81,7 +81,7 @@ const Enquiry = () => {
             <h1 className="font-heading text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] text-[#052e16]" data-testid="enquiry-hero-heading">
               Get in Touch
             </h1>
-            <p className="text-lg md:text-xl leading-relaxed text-[#3f6212]">
+            <p className="text-lg md:text-xl leading-relaxed text-[#5C4A3A]">
               Have questions about our products or want to place a bulk order? We'd love to hear from you!
             </p>
           </motion.div>
@@ -105,7 +105,7 @@ const Enquiry = () => {
                 <h2 className="font-heading text-4xl md:text-5xl font-semibold tracking-tight text-[#052e16] mb-6" data-testid="contact-info-heading">
                   Contact Information
                 </h2>
-                <p className="text-base leading-relaxed text-[#3f6212]">
+                <p className="text-base leading-relaxed text-[#5C4A3A]">
                   Reach out to us through any of these channels. Our team is ready to assist you with your organic grocery needs.
                 </p>
               </div>
@@ -126,7 +126,7 @@ const Enquiry = () => {
                   </motion.div>
                   <div>
                     <h3 className="font-heading text-xl font-medium text-[#052e16] mb-1">Phone</h3>
-                    <p className="text-base text-[#3f6212]">+91 98765 43210</p>
+                    <p className="text-base text-[#5C4A3A]">+91 98765 43210</p>
                   </div>
                 </motion.div>
 
@@ -145,7 +145,7 @@ const Enquiry = () => {
                   </motion.div>
                   <div>
                     <h3 className="font-heading text-xl font-medium text-[#052e16] mb-1">Email</h3>
-                    <p className="text-base text-[#3f6212]">hello@greengoldgrocers.com</p>
+                    <p className="text-base text-[#5C4A3A]">hello@greengoldgrocers.com</p>
                   </div>
                 </motion.div>
 
@@ -164,7 +164,7 @@ const Enquiry = () => {
                   </motion.div>
                   <div>
                     <h3 className="font-heading text-xl font-medium text-[#052e16] mb-1">Location</h3>
-                    <p className="text-base text-[#3f6212]">Mumbai, Maharashtra, India</p>
+                    <p className="text-base text-[#5C4A3A]">Mumbai, Maharashtra, India</p>
                   </div>
                 </motion.div>
               </div>

@@ -23,7 +23,7 @@ const About = () => {
             <h1 className="font-heading text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] text-[#052e16]" data-testid="about-hero-heading">
               Our Story
             </h1>
-            <p className="text-lg md:text-xl leading-relaxed text-[#3f6212]">
+            <p className="text-lg md:text-xl leading-relaxed text-[#5C4A3A]">
               Born from a passion for healthy living and sustainable farming, GreenGold Grocers is committed to bringing you the purest organic products from India's finest farms.
             </p>
           </motion.div>
@@ -66,13 +66,13 @@ const About = () => {
               <h2 className="font-heading text-4xl md:text-5xl font-semibold tracking-tight text-[#052e16]" data-testid="brand-story-heading">
                 Rooted in Tradition, Growing with Purpose
               </h2>
-              <p className="text-base leading-relaxed text-[#3f6212]">
+              <p className="text-base leading-relaxed text-[#5C4A3A]">
                 GreenGold Grocers was founded with a simple belief: that every family deserves access to nutritious, chemical-free food. We partner directly with organic farmers across India who share our commitment to sustainable agriculture and ethical practices.
               </p>
-              <p className="text-base leading-relaxed text-[#3f6212]">
+              <p className="text-base leading-relaxed text-[#5C4A3A]">
                 From the golden wheat fields of Punjab to the spice gardens of Kerala, we carefully source every product to ensure it meets our rigorous standards for quality and purity. Our mission is to reconnect urban families with the authentic tastes and nutritional benefits of traditional Indian agriculture.
               </p>
-              <p className="text-base leading-relaxed text-[#3f6212]">
+              <p className="text-base leading-relaxed text-[#5C4A3A]">
                 Today, we're proud to serve thousands of health-conscious families, delivering not just groceries, but a commitment to wellness, sustainability, and the revival of India's rich agricultural heritage.
               </p>
             </motion.div>
@@ -105,7 +105,7 @@ const About = () => {
               <h3 className="font-heading text-3xl md:text-4xl font-semibold text-[#052e16] mb-4">
                 Our Mission
               </h3>
-              <p className="text-base leading-relaxed text-[#3f6212]">
+              <p className="text-base leading-relaxed text-[#5C4A3A]">
                 To make premium organic groceries accessible to every household, promoting healthier lifestyles while supporting sustainable farming practices that respect our environment and farming communities.
               </p>
             </motion.div>
@@ -131,7 +131,7 @@ const About = () => {
               <h3 className="font-heading text-3xl md:text-4xl font-semibold text-[#052e16] mb-4">
                 Our Vision
               </h3>
-              <p className="text-base leading-relaxed text-[#3f6212]">
+              <p className="text-base leading-relaxed text-[#5C4A3A]">
                 To become India's most trusted organic grocery brand, creating a thriving ecosystem where consumers, farmers, and the environment all flourish together in harmony.
               </p>
             </motion.div>
@@ -153,7 +153,7 @@ const About = () => {
             <h2 className="font-heading text-4xl md:text-5xl font-semibold tracking-tight text-[#052e16] mb-4" data-testid="values-heading">
               Our Core Values
             </h2>
-            <p className="text-lg md:text-xl leading-relaxed text-[#3f6212] max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl leading-relaxed text-[#5C4A3A] max-w-2xl mx-auto">
               These principles guide everything we do, from farm to table.
             </p>
           </motion.div>
@@ -175,7 +175,7 @@ const About = () => {
               <h3 className="font-heading text-2xl font-medium text-[#052e16]">
                 Purity First
               </h3>
-              <p className="text-base leading-relaxed text-[#3f6212]">
+              <p className="text-base leading-relaxed text-[#5C4A3A]">
                 Zero chemicals, zero pesticides, zero compromise on what goes into your body.
               </p>
             </motion.div>
@@ -196,7 +196,7 @@ const About = () => {
               <h3 className="font-heading text-2xl font-medium text-[#052e16]">
                 Farmer Partnerships
               </h3>
-              <p className="text-base leading-relaxed text-[#3f6212]">
+              <p className="text-base leading-relaxed text-[#5C4A3A]">
                 Fair prices and long-term relationships that empower our farming communities.
               </p>
             </motion.div>
@@ -217,7 +217,7 @@ const About = () => {
               <h3 className="font-heading text-2xl font-medium text-[#052e16]">
                 Sustainability
               </h3>
-              <p className="text-base leading-relaxed text-[#3f6212]">
+              <p className="text-base leading-relaxed text-[#5C4A3A]">
                 Eco-friendly practices that protect our planet for future generations.
               </p>
             </motion.div>

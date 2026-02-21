@@ -97,7 +97,7 @@ const Products = () => {
             <h1 className="font-heading text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] text-[#052e16]" data-testid="products-hero-heading">
               Our Products
             </h1>
-            <p className="text-lg md:text-xl leading-relaxed text-[#3f6212]">
+            <p className="text-lg md:text-xl leading-relaxed text-[#5C4A3A]">
               Discover our curated selection of premium organic groceries, sourced from the finest farms across India.
             </p>
           </motion.div>
@@ -171,7 +171,7 @@ const Products = () => {
                   <h3 className="font-heading text-2xl font-medium text-[#052e16]">
                     {product.name}
                   </h3>
-                  <p className="text-base leading-relaxed text-[#3f6212]">
+                  <p className="text-base leading-relaxed text-[#5C4A3A]">
                     {product.description}
                   </p>
                 </div>
@@ -182,7 +182,7 @@ const Products = () => {
           {/* No products message */}
           {filteredProducts.length === 0 && (
             <div className="text-center py-12">
-              <p className="text-lg text-[#3f6212]">No products found in this category.</p>
+              <p className="text-lg text-[#5C4A3A]">No products found in this category.</p>
             </div>
           )}
         </div>

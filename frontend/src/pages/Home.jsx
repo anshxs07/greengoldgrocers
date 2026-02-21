@@ -37,7 +37,7 @@ const Home = () => {
                 Pure Nature,<br />
                 Delivered to Your Door
               </h1>
-              <p className="text-lg md:text-xl leading-relaxed text-[#3f6212] max-w-xl" data-testid="hero-subtext">
+              <p className="text-lg md:text-xl leading-relaxed text-[#5C4A3A] max-w-xl" data-testid="hero-subtext">
                 Experience the authentic taste of premium Indian organic groceries. Sustainably sourced, ethically grown, and delivered fresh to your home.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -107,7 +107,7 @@ const Home = () => {
             <h2 className="font-heading text-4xl md:text-5xl font-semibold tracking-tight text-[#052e16] mb-4" data-testid="features-heading">
               Why Choose GreenGold?
             </h2>
-            <p className="text-lg md:text-xl leading-relaxed text-[#3f6212] max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl leading-relaxed text-[#5C4A3A] max-w-2xl mx-auto">
               We're committed to bringing you the finest organic products with uncompromising quality.
             </p>
           </motion.div>
@@ -134,7 +134,7 @@ const Home = () => {
               <h3 className="font-heading text-2xl md:text-3xl font-medium text-[#052e16] mb-4">
                 Organic Ingredients
               </h3>
-              <p className="text-base leading-relaxed text-[#3f6212]">
+              <p className="text-base leading-relaxed text-[#5C4A3A]">
                 Certified 100% organic products sourced directly from sustainable farms across India.
               </p>
             </motion.div>
@@ -160,7 +160,7 @@ const Home = () => {
               <h3 className="font-heading text-2xl md:text-3xl font-medium text-[#052e16] mb-4">
                 Premium Quality
               </h3>
-              <p className="text-base leading-relaxed text-[#3f6212]">
+              <p className="text-base leading-relaxed text-[#5C4A3A]">
                 Rigorous quality checks ensure only the best products reach your kitchen.
               </p>
             </motion.div>
@@ -186,7 +186,7 @@ const Home = () => {
               <h3 className="font-heading text-2xl md:text-3xl font-medium text-[#052e16] mb-4">
                 Healthy Lifestyle
               </h3>
-              <p className="text-base leading-relaxed text-[#3f6212]">
+              <p className="text-base leading-relaxed text-[#5C4A3A]">
                 Nourish your body with wholesome, chemical-free groceries for a healthier life.
               </p>
             </motion.div>
