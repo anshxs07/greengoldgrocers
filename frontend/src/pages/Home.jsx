@@ -23,11 +23,16 @@ const Home = () => {
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
               className="space-y-8"
             >
-              <div className="inline-block">
+              <motion.div 
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="inline-block"
+              >
                 <span className="text-sm font-medium tracking-wider uppercase text-[#14532D]/80 bg-[#D6EFD8] px-4 py-2 rounded-full" data-testid="hero-badge">
                   100% Organic & Natural
                 </span>
-              </div>
+              </motion.div>
               <h1 className="font-heading text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] text-[#052e16]" data-testid="hero-headline">
                 Pure Nature,<br />
                 Delivered to Your Door
@@ -36,20 +41,24 @@ const Home = () => {
                 Experience the authentic taste of premium Indian organic groceries. Sustainably sourced, ethically grown, and delivered fresh to your home.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  to="/products"
-                  data-testid="cta-explore-products"
-                  className="bg-[#14532D] text-white px-8 py-6 rounded-full text-lg font-medium tracking-wide transition-all shadow-lg shadow-[#14532D]/20 hover:shadow-xl hover:shadow-[#14532D]/30 active:scale-95 text-center"
-                >
-                  Explore Products
-                </Link>
-                <Link
-                  to="/enquiry"
-                  data-testid="cta-enquire-now"
-                  className="border-2 border-[#14532D] text-[#14532D] px-8 py-6 rounded-full text-lg font-medium tracking-wide transition-all hover:bg-[#14532D]/10 bg-transparent active:scale-95 text-center"
-                >
-                  Enquire Now
-                </Link>
+                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                  <Link
+                    to="/products"
+                    data-testid="cta-explore-products"
+                    className="bg-[#14532D] text-white px-8 py-6 rounded-full text-lg font-medium tracking-wide transition-all shadow-lg shadow-[#14532D]/20 hover:shadow-xl hover:shadow-[#14532D]/40 text-center block"
+                  >
+                    Explore Products
+                  </Link>
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                  <Link
+                    to="/enquiry"
+                    data-testid="cta-enquire-now"
+                    className="border-2 border-[#14532D] text-[#14532D] px-8 py-6 rounded-full text-lg font-medium tracking-wide transition-all hover:bg-[#14532D]/10 hover:shadow-lg hover:shadow-[#14532D]/20 bg-transparent text-center block"
+                  >
+                    Enquire Now
+                  </Link>
+                </motion.div>
               </div>
             </motion.div>
 
@@ -60,16 +69,25 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
             >
-              <div className="relative rounded-3xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+              <motion.div 
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.4 }}
+                className="relative rounded-3xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:shadow-[0_12px_40px_rgb(20,83,45,0.15)]"
+              >
                 <img
                   src="https://images.unsplash.com/photo-1631021967261-c57ee4dfa9bb?auto=format&fit=crop&q=80&w=800"
                   alt="Fresh organic tomatoes in a woven basket"
-                  className="w-full h-[500px] object-cover"
+                  className="w-full h-[500px] object-cover transition-transform duration-700"
                   data-testid="hero-image"
                 />
-              </div>
+              </motion.div>
               {/* Decorative element */}
-              <div className="absolute -z-10 top-10 right-10 w-64 h-64 bg-[#D97706] rounded-full opacity-20 blur-3xl"></div>
+              <motion.div 
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 0.2, scale: 1 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                className="absolute -z-10 top-10 right-10 w-64 h-64 bg-[#D97706] rounded-full blur-3xl"
+              ></motion.div>
             </motion.div>
           </div>
         </div>
