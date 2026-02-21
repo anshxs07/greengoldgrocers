@@ -11,14 +11,23 @@ const Layout = ({ children }) => {
   return (
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#FDFBF7' }}>
       {/* Header */}
-      <header className="sticky top-0 z-50 backdrop-blur-md bg-white/70 border-b border-[#D6EFD8] shadow-sm">
+      <motion.header 
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+        className="sticky top-0 z-50 backdrop-blur-md bg-white/70 border-b border-[#D6EFD8] shadow-sm"
+      >
         <nav className="container mx-auto px-4 md:px-8 max-w-7xl">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2 group" data-testid="logo-link">
-              <div className="bg-[#14532D] p-2 rounded-full">
+              <motion.div 
+                whileHover={{ rotate: 360, scale: 1.1 }}
+                transition={{ duration: 0.6 }}
+                className="bg-[#14532D] p-2 rounded-full"
+              >
                 <Leaf className="w-6 h-6 text-white" />
-              </div>
+              </motion.div>
               <span className="text-2xl font-heading font-bold text-[#14532D] tracking-tight">
                 GreenGold Grocers
               </span>
@@ -29,7 +38,7 @@ const Layout = ({ children }) => {
               <Link
                 to="/"
                 data-testid="nav-home"
-                className={`text-base font-medium tracking-wide transition-colors ${
+                className={`text-base font-medium tracking-wide transition-all hover:scale-105 ${
                   isActive('/') ? 'text-[#14532D] font-semibold' : 'text-[#3f6212] hover:text-[#14532D]'
                 }`}
               >
@@ -38,7 +47,7 @@ const Layout = ({ children }) => {
               <Link
                 to="/about"
                 data-testid="nav-about"
-                className={`text-base font-medium tracking-wide transition-colors ${
+                className={`text-base font-medium tracking-wide transition-all hover:scale-105 ${
                   isActive('/about') ? 'text-[#14532D] font-semibold' : 'text-[#3f6212] hover:text-[#14532D]'
                 }`}
               >
@@ -47,19 +56,21 @@ const Layout = ({ children }) => {
               <Link
                 to="/products"
                 data-testid="nav-products"
-                className={`text-base font-medium tracking-wide transition-colors ${
+                className={`text-base font-medium tracking-wide transition-all hover:scale-105 ${
                   isActive('/products') ? 'text-[#14532D] font-semibold' : 'text-[#3f6212] hover:text-[#14532D]'
                 }`}
               >
                 Our Products
               </Link>
-              <Link
-                to="/enquiry"
-                data-testid="nav-enquiry"
-                className="bg-[#14532D] text-white px-6 py-3 rounded-full font-medium text-base hover:bg-[#14532D]/90 transition-all shadow-lg shadow-[#14532D]/20 hover:shadow-xl hover:shadow-[#14532D]/30 active:scale-95"
-              >
-                Enquiry
-              </Link>
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Link
+                  to="/enquiry"
+                  data-testid="nav-enquiry"
+                  className="bg-[#14532D] text-white px-6 py-3 rounded-full font-medium text-base hover:bg-[#14532D]/90 transition-all shadow-lg shadow-[#14532D]/20 hover:shadow-xl hover:shadow-[#14532D]/40"
+                >
+                  Enquiry
+                </Link>
+              </motion.div>
             </div>
 
             {/* Mobile Menu Button */}
@@ -70,10 +81,22 @@ const Layout = ({ children }) => {
             </button>
           </div>
         </nav>
-      </header>
+      </motion.header>
 
-      {/* Main Content */}
-      <main className="flex-grow">{children}</main>
+      {/* Main Content with Page Transition */}
+      <main className="flex-grow">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={location.pathname}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+          >
+            {children}
+          </motion.div>
+        </AnimatePresence>
+      </main>
 
       {/* Footer */}
       <footer className="bg-[#14532D] text-white mt-auto">
