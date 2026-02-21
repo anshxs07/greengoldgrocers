@@ -40,11 +40,12 @@ const About = () => {
               viewport={{ once: true, margin: '-100px' }}
               variants={fadeInUp}
               transition={{ duration: 0.6 }}
+              whileHover={{ scale: 1.02 }}
             >
               <img
                 src="https://images.unsplash.com/photo-1704989522658-81902cc56f54?auto=format&fit=crop&q=80&w=800"
                 alt="Golden hour wheat farm field in India"
-                className="w-full h-[500px] object-cover rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.08)]"
+                className="w-full h-[500px] object-cover rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:shadow-[0_12px_40px_rgb(20,83,45,0.15)] transition-all duration-500"
                 data-testid="about-farm-image"
               />
             </motion.div>
