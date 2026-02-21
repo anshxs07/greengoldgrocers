@@ -118,18 +118,20 @@ const Products = () => {
           >
             <div className="flex flex-wrap gap-3 justify-center">
               {categories.map((category) => (
-                <button
+                <motion.button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
                   data-testid={`category-${category.toLowerCase().replace(/\s+/g, '-')}`}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                   className={`px-6 py-3 rounded-full font-medium text-base transition-all ${
                     selectedCategory === category
-                      ? 'bg-[#14532D] text-white shadow-lg shadow-[#14532D]/20'
-                      : 'bg-white text-[#14532D] hover:bg-[#D6EFD8] border border-[#D6EFD8]'
+                      ? 'bg-[#14532D] text-white shadow-lg shadow-[#14532D]/30'
+                      : 'bg-white text-[#14532D] hover:bg-[#D6EFD8] border border-[#D6EFD8] hover:shadow-md'
                   }`}
                 >
                   {category}
-                </button>
+                </motion.button>
               ))}
             </div>
           </motion.div>
