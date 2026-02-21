@@ -1,0 +1,198 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "GreenGold Grocers",
+      "tone": "Organic, Premium, Trustworthy, Earthy, Indian-Heritage",
+      "theme_mode": "light",
+      "persona": "E1"
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Playfair Display, serif",
+        "body": "Manrope, sans-serif",
+        "accent": "Caveat, handwriting"
+      },
+      "scale": {
+        "h1": "text-5xl md:text-7xl font-bold tracking-tight leading-[1.1]",
+        "h2": "text-4xl md:text-5xl font-semibold tracking-tight",
+        "h3": "text-2xl md:text-3xl font-medium",
+        "body_large": "text-lg md:text-xl leading-relaxed text-muted-foreground",
+        "body": "text-base leading-relaxed text-muted-foreground",
+        "caption": "text-sm font-medium tracking-wider uppercase text-primary/80"
+      },
+      "import_url": "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Manrope:wght@200..800&family=Caveat:wght@400..700&display=swap"
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "DEFAULT": "#14532D",
+          "foreground": "#FFFFFF",
+          "description": "Deep Forest Green - Trust & Nature"
+        },
+        "secondary": {
+          "DEFAULT": "#D6EFD8",
+          "foreground": "#14532D",
+          "description": "Pale Sage - Freshness"
+        },
+        "accent": {
+          "DEFAULT": "#D97706",
+          "foreground": "#FFFFFF",
+          "description": "Turmeric Gold - Indian Heritage & Premium"
+        },
+        "background": {
+          "DEFAULT": "#FDFBF7",
+          "paper": "#F5F5F0",
+          "description": "Bone White / Warm Paper - Organic Feel"
+        },
+        "text": {
+          "main": "#052e16",
+          "muted": "#3f6212"
+        }
+      },
+      "gradients": {
+        "hero": "bg-gradient-to-b from-[#FDFBF7] to-[#D6EFD8]/30",
+        "card": "bg-gradient-to-br from-white to-[#F5F5F0]"
+      }
+    },
+    "spacing": {
+      "container": "container mx-auto px-4 md:px-8 max-w-7xl",
+      "section_padding": "py-20 md:py-32",
+      "element_gap": "gap-8 md:gap-12",
+      "card_padding": "p-6 md:p-8"
+    },
+    "visual_enhancers": {
+      "radius": "rounded-2xl md:rounded-3xl",
+      "shadows": {
+        "card": "shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-shadow duration-500",
+        "button": "shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30"
+      },
+      "textures": {
+        "noise": "bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"
+      },
+      "glass": "backdrop-blur-md bg-white/70 border border-white/20 shadow-sm"
+    },
+    "layout_strategies": {
+      "hero": {
+        "type": "asymmetric_split",
+        "description": "Text on left with massive serif typography, organic shaped image on right or overlapping"
+      },
+      "features": {
+        "type": "bento_grid",
+        "config": "grid grid-cols-1 md:grid-cols-3 gap-6"
+      },
+      "products": {
+        "type": "masonry_or_grid",
+        "description": "Clean cards with large image areas, minimal text, focus on 'Add to Cart' pill button"
+      }
+    },
+    "motion": {
+      "library": "framer-motion",
+      "defaults": {
+        "transition": { "duration": 0.6, "ease": [0.22, 1, 0.36, 1] },
+        "viewport": { "once": true, "margin": "-100px" }
+      },
+      "variants": {
+        "fadeInUp": {
+          "hidden": { "opacity": 0, "y": 40 },
+          "visible": { "opacity": 1, "y": 0 }
+        },
+        "staggerContainer": {
+          "hidden": {},
+          "visible": { "transition": { "staggerChildren": 0.1 } }
+        }
+      }
+    },
+    "component_overrides": {
+      "Button": {
+        "styles": "rounded-full px-8 py-6 text-lg font-medium tracking-wide transition-all active:scale-95",
+        "variants": {
+          "default": "bg-primary text-primary-foreground hover:bg-primary/90",
+          "outline": "border-2 border-primary text-primary hover:bg-primary/10 bg-transparent"
+        }
+      },
+      "Card": {
+        "styles": "border-none shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white rounded-3xl overflow-hidden"
+      },
+      "Input": {
+        "styles": "rounded-xl border-primary/20 bg-white/50 focus:bg-white focus:border-primary h-12"
+      }
+    }
+  },
+  "pages": {
+    "Home": {
+      "sections": ["Hero", "Features (Bento)", "BestSellers", "Testimonials", "CTA"],
+      "content": {
+        "hero_headline": "Pure Nature, <br/> Delivered to Your Door.",
+        "hero_subhead": "Experience the authentic taste of premium Indian organic groceries. Sustainably sourced, ethically grown.",
+        "cta_primary": "Shop Now",
+        "cta_secondary": "Our Story"
+      }
+    },
+    "About": {
+      "sections": ["Mission", "FarmStory", "Values"],
+      "tone": "Storytelling, Heritage, Trust"
+    },
+    "Products": {
+      "categories": ["Atta & Whole Grains", "Healthy Cereals", "Superfoods", "Natural Grocery"],
+      "layout": "Sidebar filter with Grid Content"
+    },
+    "Enquiry": {
+      "layout": "Split screen: Contact Info (Dark Green) + Form (White)"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_main": {
+        "url": "https://images.unsplash.com/photo-1631021967261-c57ee4dfa9bb?auto=format&fit=crop&q=80",
+        "alt": "Fresh organic tomatoes in a woven basket on wooden table"
+      },
+      "about_farm": {
+        "url": "https://images.unsplash.com/photo-1704989522658-81902cc56f54?auto=format&fit=crop&q=80",
+        "alt": "Golden hour wheat farm field in India"
+      },
+      "product_spices": {
+        "url": "https://images.unsplash.com/photo-1771541897176-44a3e01dc484?auto=format&fit=crop&q=80",
+        "alt": "Colorful Indian spices in bowls"
+      },
+      "product_grains": {
+        "url": "https://images.unsplash.com/photo-1535032756890-c4d0a4dbfd06?auto=format&fit=crop&q=80",
+        "alt": "Healthy grains and pulses"
+      },
+      "feature_quality": {
+        "url": "https://images.unsplash.com/photo-1562178101-02e243762ffa?auto=format&fit=crop&q=80",
+        "alt": "Premium organic certification badge concept"
+      },
+      "family_dining": {
+        "url": "https://images.unsplash.com/photo-1768573507890-535afb364aef?auto=format&fit=crop&q=80",
+        "alt": "Wholesome organic dining setting"
+      }
+    },
+    "icons": {
+      "library": "lucide-react",
+      "preferred": ["Leaf", "Sprout", "Wheat", "Sun", "HeartHandshake", "Truck"]
+    }
+  },
+  "universal_guidelines": [
+    "Use 'Playfair Display' for all Headings (H1-H3). Use 'Manrope' for body text.",
+    "Do not use pure black (#000000). Use #052e16 (Very Dark Green) for text.",
+    "Buttons must be Pill Shaped (rounded-full).",
+    "Images must have rounded corners (rounded-2xl or rounded-3xl).",
+    "Use generous whitespace (py-24, py-32) between sections.",
+    "Avoid standard 'Bootstrap' grids. Use asymmetric layouts.",
+    "Add subtle 'noise' texture to backgrounds to avoid digital flatness.",
+    "Ensure 4.5:1 contrast ratio for all text.",
+    "All interactive elements must have a valid data-testid attribute."
+  ],
+  "instructions_to_main_agent": {
+    "setup": [
+      "Install fonts via Google Fonts import in index.css",
+      "Update tailwind.config.js with the provided color palette",
+      "Create a 'Layout' component that wraps pages with Header/Footer and smooth scroll (lenis)",
+      "Use 'framer-motion' for simple entrance animations on scroll"
+    ],
+    "file_structure_hint": {
+      "pages": "/app/frontend/src/pages",
+      "components": "/app/frontend/src/components"
+    }
+  }
+}
